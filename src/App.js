@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './components/Counter';
+import { List } from './components/List';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           React Concepts!
         </p>
         <Counter />
+        <List />
 
       </header>
     </div>
