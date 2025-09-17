@@ -32,7 +32,7 @@ export function List() {
             <li key={index}>
               {items}
               <button
-                className="btn-rounded"
+                className="btn-rounded" style={{margin:5}}
                 onClick={() => handleDelete(index)}
               >
                 Delete
