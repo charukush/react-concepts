@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export function List() {
   const [text, setText] = useState();
@@ -6,8 +6,12 @@ export function List() {
 
   function handleList() {
     setList([...list, text]);
-    setText(" ");
+    setText(' ');
   }
+  //Delete item by index
+  const handleDelete = (index) => {
+    setList(list.filter((_, i) => i !== index));
+  };
 
   return (
     <>
@@ -25,7 +29,15 @@ export function List() {
         </button>
         <p>
           {list.map((items, index) => (
-            <li key={index}>{items}</li>
+            <li key={index}>
+              {items}
+              <button
+                className="btn-rounded"
+                onClick={() => handleDelete(index)}
+              >
+                Delete
+              </button>
+            </li>
           ))}
         </p>
       </p>
