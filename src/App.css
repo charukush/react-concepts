@@ -28,6 +28,10 @@
   transition: 0.3s ease;
 }
 
+.btn-rounded-delete{
+  background-color: #a72841; /* Red */
+}
+
 input[type="text"] {
   width: 250px;
   padding: 10px 12px;
