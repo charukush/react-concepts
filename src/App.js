@@ -1,7 +1,7 @@
 import './App.css';
-import Counter from './components/Counter';
-import { List } from './components/List';
-import ListTest from './components/ListTest';
+import Counter from './Components/Counter';
+import { List } from './Components/List';
+
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <p>React Concepts!</p>
         <Counter />
         <List />
-        <ListTest />
+       
       </header>
     </div>
   );
