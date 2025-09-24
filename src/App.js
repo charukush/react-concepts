@@ -1,6 +1,7 @@
 import './App.css';
-import Counter from './Components/Counter';
-import { List } from './Components/List';
+import Counter from './components/Counter';
+import { List } from './components/List';
+
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <p>React Concepts!</p>
         <Counter />
         <List />
+      
        
       </header>
     </div>
